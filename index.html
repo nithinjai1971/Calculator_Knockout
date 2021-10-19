@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>The Calculator program- knockout</title>
+    <style>
+      .full-div {
+        border: 5px solid;
+        border-color: #ffcbc4;
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+        /* height: 200px; */
+        width: 200px;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+      }
+      body {
+        height: 100vh;
+        background-color: lightseagreen;
+      }
+      button {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        background: #ffcbc4;
+      }
+      .big_button {
+        width: 60px;
+      }
+    </style>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
+      integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="full-div">
+      <input
+        placeholder="Enter Values"
+        name="answer"
+        data-bind="value: outputValue"
+      />
+      <br /><br />
+      <button data-bind="click: clickOne">1</button>
+      <button data-bind="click: clickTwo">2</button>
+      <button data-bind="click: clickThree">3</button>
+      <button data-bind="click: clickAdd">+</button>
+      <br />
+      <button data-bind="click: clickFour">4</button>
+      <button data-bind="click: clickFive">5</button>
+      <button data-bind="click: clickSix ">6</button>
+      <button data-bind="click: clickSub">-</button>
+      <br />
+      <button data-bind="click: clickSeven">7</button>
+      <button data-bind="click: clickEight">8</button>
+      <button data-bind="click: clickNine">9</button>
+      <button data-bind="click: clickMul">*</button>
+      <br />
+      <button data-bind="click: clickC">C</button>
+      <button data-bind="click: clickZero">0</button>
+      <button data-bind="click: clickDot">.</button>
+      <button data-bind="click: clickDiv">/</button>
+      <br />
+      <button data-bind="click: clickDel">del</button>
+      <button data-bind="click: clickMod">%</button>
+      <button data-bind="click: clickEqual">=</button>
+      <br />
+      <button class="big_button" data-bind="click: clickSubmit">Submit</button>
+      <button class="big_button" data-bind="click: clickReset">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
